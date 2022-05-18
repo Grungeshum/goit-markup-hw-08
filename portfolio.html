@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="page">
+    <!-- Шапка -->
+    <header class="page-header">
+      <div class="page-header container">
+        <a href="./index.html" class="logo header__logo">
+          <span class="logo logo--accent">Web</span>
+          <span>Studio</span>
+        </a>
+        <nav class="navigation">
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="index.html" class="site-nav__link">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="connect list backdown">
+          <li class="connect__item">
+            <a href="mailto:info@devstudio.com" class="connect__link">
+              <svg class="connect__icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#iconmail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="connect__item">
+            <a href="tel:+380961111111" class="connect__link">
+              <svg class="connect__icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#iconphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Уникальный контент страницы -->
+    <main>
+      <!-- Портфолио -->
+      <section class="portfolio">
+        <div class="container">
+          <h1 class="portfolio-title visaully-hidden">Портфолио</h1>
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <button type="button" class="filter-button">Все</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="projects list">
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/web.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Технокряк</h3>
+                <p class="projects-type">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/design.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Постер New Orlean vs Golden Star</h3>
+                <p class="projects-type">Дизайн</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/app.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Ресторан Seafood</h3>
+                <p class="projects-type">Приложение</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/marketing.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Проект Prime</h3>
+                <p class="projects-type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/app2.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Проект Boxes</h3>
+                <p class="projects-type">Приложение</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/web2.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Inspiration has no Borders</h3>
+                <p class="projects-type">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/design.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Издание Limited Edition</h3>
+                <p class="projects-type">Дизайн</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/marketing2.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Проект LAB</h3>
+                <p class="projects-type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="projects-item">
+              <div class="project-description-item">
+                <img src="./images/app3.jpg" alt="" width="370" />
+                <p class="project-description">
+                  Технокряк это современная площадка распространения коронавируса. Компании
+                  используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                  конкурентов.
+                </p>
+              </div>
+              <div class="item-border">
+                <h3 class="projects-title">Growing Business</h3>
+                <p class="projects-type">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-contacts">
+          <a href="./index.html" class="logo footer__logo">
+            <span class="logo--accent">Web</span>
+            <span>Studio</span>
+          </a>
+          <address>
+            <p class="post-address">г. Киев, пр-т Леси Украинки, 26</p>
+          </address>
+          <address>
+            <a href="mailto:info@devstudio.com" class="footer-address">
+              info@devstudio.com
+            </a>
+            <a href="tel:+380961111111" class="footer-address">
+              +38 096 111 11 11
+            </a>
+          </address>
+        </div>
+
+        <div class="footer-soc">
+          <span class="footer-titles">присоединяйтесь</span>
+          <ul class="footer-soc-list list">
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#iconinstagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icontwitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#iconfacebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link">
+                <svg class="footer-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#iconlinkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-action">
+          <p class="footer-titles">Подпишитесь на рассылку</p>
+          <form>
+            <div class="footer-subscription">
+              <input type="email" class="footer-input" name="user-mail" placeholder="E-mail" />
+              <button type="submit" class="button-footer">
+                Подписаться
+                <svg class="icon-subscription" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#iconsend-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

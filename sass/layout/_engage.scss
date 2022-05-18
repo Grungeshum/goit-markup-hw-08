@@ -1,0 +1,46 @@
+.engage {
+  padding-top: 0;
+}
+
+.engage-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  margin: 0 auto;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.engage-list {
+  display: flex;
+  justify-content: center;
+}
+
+.engage-item {
+  position: relative;
+
+  margin-right: 30px;
+}
+.engage-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.engage-item-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+
+  padding: 27px 82px;
+  width: 100%;
+
+  color: var(--primary-bg-color);
+  background-color: rgba(47, 48, 58, 0.8);
+
+  display: block;
+}

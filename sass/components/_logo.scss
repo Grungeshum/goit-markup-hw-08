@@ -1,0 +1,19 @@
+.logo {
+  color: #000;
+  font-family: Raleway, sans-serif;
+  @include font(700, 26px, 1.19, 0.03em);
+
+  display: flex;
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  color: var(--primary-bg-color);
+}
+
+.logo--accent {
+  color: var(--accent-color);
+}

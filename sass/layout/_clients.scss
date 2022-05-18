@@ -1,0 +1,30 @@
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  fill: rgba(175, 177, 184, 1);
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  @include align-list;
+  justify-content: center;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+  }
+}
