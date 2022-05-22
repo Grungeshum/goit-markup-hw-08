@@ -1,14 +1,11 @@
-.clients-title {
-  @include font(700, 36px, 1.16, 0.03em);
-
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-title {
@@ -17,20 +14,53 @@
 
 .filter-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: -15px;
 
-  /* outline: 1px solid tomato; */
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
-.filter-item + .filter-item {
-  margin-left: 8px;
+.filter-item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: -30px;
+  margin-top: 40px;
 
-  margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+    margin-right: -30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: -120px;
+  }
+}
+
+.project-image {
+  width: 100%;
 }
 
 .projects-title {
@@ -38,8 +68,20 @@
 }
 
 .projects-item {
-  flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 60px);
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 
   cursor: pointer;
 
@@ -48,14 +90,6 @@
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-
-  &:nth-child(n + 4) {
-    margin-top: 30px;
   }
 }
 

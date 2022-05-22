@@ -18,6 +18,16 @@
   justify-content: center;
 }
 
+.section.engage {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .section.engage {
+    display: flex;
+  }
+}
+
 .engage-item {
   position: relative;
 

@@ -1,15 +1,42 @@
-.clients-item + .clients-item {
+.clients-title {
+  @include font(700, 28px, 1.17, 0.03em);
+
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 36px, 1.17, null);
+    margin-bottom: 50px;
+  }
+}
+
+.clients-item {
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
+
   justify-content: center;
+
+  margin-left: -30px;
 }
 
 .clients-link {
-  width: 170px;
+  width: 210px;
   height: 92px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
   fill: rgba(175, 177, 184, 1);
 
   border: 1px solid #afb1b8;

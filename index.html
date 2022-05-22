@@ -60,16 +60,19 @@
     <!-- Уникальный контент страницы -->
     <main>
       <!-- Герой -->
-      <!-- <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения
-          <br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="button button--accent" data-modal-open>
-          Заказать услугу
-        </button>
-      </section> -->
+      <section class="hero">
+        <div class="hero-container">
+          <h1 class="hero-title">
+            Эффективные решения
+            <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="button button--accent" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
+      </section>
+
       <!-- Наши премущества -->
       <section class="section">
         <div class="container">
@@ -102,49 +105,76 @@
           </ul>
         </div>
       </section>
+
       <!-- Чем мы занимаемся -->
-      <!-- <section class="section engage">
+      <section class="section engage">
         <div class="container">
           <h2 class="engage-title">Чем мы занимаемся</h2>
           <ul class="engage-list list">
             <li class="engage-item">
-              <img
-                src="./images/imgl1.jpg"
-                alt="процесс написания кода согласно блок-схемы"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgl1.jpg 1x, ./images/imgl1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/imgl1.jpg" alt="процесс написания кода согласно блок-схемы" />
+              </picture>
               <span class="engage-item-text">Десктопные приложения</span>
             </li>
             <li class="engage-item">
-              <img
-                src="./images/imgm2.jpg"
-                alt="просмотр расположения секций мобильной версии сайта на мониторе ноутбука"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgm2.jpg 1x, ./images/imgm2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/imgm2.jpg"
+                  alt="просмотр расположения секций мобильной версии сайта на мониторе ноутбука"
+                />
+              </picture>
+
               <span class="engage-item-text">Мобильные приложения</span>
             </li>
             <li class="engage-item">
-              <img
-                src="./images/imgr3.jpg"
-                alt="на планшете выбирает цвет из палитры"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/imgr3.jpg 1x, ./images/imgr3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <img src="./images/imgr3.jpg" alt="на планшете выбирает цвет из палитры" />
+              </picture>
+
               <span class="engage-item-text">Дизайнерские решения</span>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
+
       <!-- Наша команда -->
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                src="images/id1.jpg"
-                alt="мужчина с бородой и в очках в коричневой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/id1.jpg 1x, ./images/id1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tab-1.jpg 1x, ./images/tab-1-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/mob-1.jpg 1x, ./images/mob-1-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team-image"
+                  src="./images/id1.jpg"
+                  alt="мужчина с бородой и в очках в коричневой рубашке"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p class="position" lang="en">Product Designer</p>
@@ -182,11 +212,26 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="images/or2.jpg"
-                alt="женщина с светлыми волосами в очках и в черном пиджаке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/or2.jpg 1x, ./images/or2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tab-2.jpg 1x, ./images/tab-2-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/mob-2.jpg 1x, ./images/mob-2-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team-image"
+                  src="./images/or2.jpg"
+                  alt="женщина с светлыми волосами в очках и в черном пиджаке"
+                />
+              </picture>
+
               <div class="team-info">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p class="position" lang="en">Frontend Developer</p>
@@ -223,7 +268,26 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="images/nt3.jpg" alt="мужчина с бородой в голубой рубашке" width="270" />
+              <picture>
+                <source
+                  srcset="./images/nt3.jpg 1x, ./images/nt3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tab-3.jpg 1x, ./images/tab-3-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/mob-3.jpg 1x, ./images/mob-3-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team-image"
+                  src="./images/nt3.jpg"
+                  alt="мужчина с бородой в голубой рубашке"
+                />
+              </picture>
+
               <div class="team-info">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p class="position" lang="en">Marketing</p>
@@ -260,11 +324,26 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="images/me4.jpg"
-                alt="мужчина с бородой и в очках в черной фетболке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/me4.jpg 1x, ./images/me4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/tab-4.jpg 1x, ./images/tab-4-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/mob-4.jpg 1x, ./images/mob-4-2x.jpg 2x"
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team-image"
+                  src="./images/me4.jpg"
+                  alt="мужчина с бородой и в очках в черной фетболке"
+                />
+              </picture>
+
               <div class="team-info">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p class="position" lang="en">UI Designer</p>
@@ -302,10 +381,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Клиенты -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="clients-title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -353,7 +432,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
     <!-- <footer class="main-footer">
