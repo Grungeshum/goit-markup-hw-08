@@ -1,17 +1,31 @@
 .logo {
   color: #000;
   font-family: Raleway, sans-serif;
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.16, 0.03em);
 
   display: flex;
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 26px, 1.19, null);
+  }
 }
 
 .header__logo {
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+
+  // margin-right: 93px;
 }
 
 .footer__logo {
   color: var(--primary-bg-color);
+  // justify-content: center;
 }
 
 .logo--accent {
