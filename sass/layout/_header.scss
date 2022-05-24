@@ -229,6 +229,10 @@
 .mobile-connect__phone {
   @include font(500, 34px, 1.17, 0.02em);
   color: var(--accent-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 9vw;
+  }
 }
 
 .mobile-connect__mail {
@@ -239,6 +243,10 @@
 .mobile-soc-link {
   @include font(500, 18px, 1.22, 0.02em);
   color: var(--accent-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 3vw;
+  }
 }
 
 .mobile-soc-list {
