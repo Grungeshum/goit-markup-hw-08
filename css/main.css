@@ -395,6 +395,8 @@ a {
 
 .hero {
   padding: 118px 15px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
   background-color: #2f303a;
   background-repeat: no-repeat;
@@ -530,7 +532,11 @@ a {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 10px;
-  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .feature__label {
+    text-align: center;
+  }
 }
 
 .feature__text {
@@ -744,6 +750,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .clients-link {
@@ -1055,7 +1062,7 @@ a {
   margin-left: 10px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-contacts {
     display: flex;
     width: 232px;
@@ -1160,6 +1167,11 @@ a {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 768px) {
+  .footer-input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-input {
